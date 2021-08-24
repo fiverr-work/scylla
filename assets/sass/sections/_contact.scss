@@ -1,0 +1,68 @@
+#contact {
+  padding-bottom: 80px;
+  position: relative;
+  top: 10rem;
+  h1 {
+    text-align: center;
+    margin-bottom: 50px;
+  }
+  h4 {
+    margin-bottom: 25px;
+  }
+  & > .row {
+    border-radius: 10px;
+    background-color: white;
+    box-shadow: 0 0 10px rgba($color-primary, 0.1);
+    & > div:last-child {
+      border-radius: 10px;
+      background: rgb(95, 145, 255);
+      background: linear-gradient(145deg, rgba(95, 145, 255, 1) 0%, rgba(35, 90, 209, 1) 100%);
+    }
+  }
+  .col-12 {
+    margin-bottom: 24px;
+  }
+  form {
+    padding: 50px 20px;
+    .submit {
+      text-align: right;
+      button {
+        margin-top: 24px;
+        padding-left: 30px;
+        padding-right: 30px;
+      }
+    }
+    h4 {
+      color: $color-primary;
+    }
+
+    @include mq(md) {
+      button {
+        width: 100%;
+      }
+    }
+  }
+  .info {
+    padding: 50px 20px;
+    color: white;
+    label {
+      margin-bottom: 10px;
+    }
+    .social-media {
+      margin-top: 20px;
+      a {
+        margin-right: 10px;
+        &:hover {
+          svg {
+            transition: transform 200ms;
+            transform: scale(1.1);
+          }
+        }
+        svg {
+          transition: transform 200ms;
+          width: 20px;
+        }
+      }
+    }
+  }
+}

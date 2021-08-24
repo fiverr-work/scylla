@@ -1,0 +1,12 @@
+input,
+textarea {
+  padding: 15px;
+  padding-left: 0;
+  border-bottom: 2px solid $color-text;
+  width: 100%;
+  padding-bottom: 15px;
+  &::placeholder {
+    color: $color-text;
+    opacity: 0.6;
+  }
+}

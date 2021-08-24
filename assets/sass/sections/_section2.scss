@@ -1,0 +1,126 @@
+#section2 {
+  position: relative;
+  top: 11rem;
+  z-index: 1;
+  margin-top: 100px;
+  header {
+    margin-bottom: 80px;
+    text-align: center;
+    h1 {
+      margin-bottom: 24px;
+    }
+  }
+  .row {
+    .card {
+      position: relative;
+      overflow: hidden;
+      border-radius: 18px;
+      background: white;
+      border: none;
+      box-shadow: 0 0 15px white;
+      padding: 15px;
+      cursor: pointer;
+      border: 3px solid transparent;
+      transition: border-color 200ms;
+      margin-bottom: 30px;
+      min-height: 300px;
+
+      &:hover {
+        transition: border-color 200ms;
+        &.danger {
+          border-color: $color-danger;
+        }
+        &.info {
+          border-color: $color-info;
+        }
+        &.default {
+          border-color: $color-default;
+        }
+        &.warning {
+          border-color: $color-warning;
+        }
+        .icon {
+          transition: transform 200ms;
+          transform: scale(1.03);
+        }
+      }
+      & > img {
+        position: absolute;
+      }
+      .icon {
+        transition: transform 200ms;
+        border-radius: 9px;
+        margin-bottom: 50px;
+        z-index: 1;
+        width: 90px;
+        height: 90px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      &.danger {
+        & > img {
+          width: 70%;
+          top: -70px;
+          right: -50px;
+        }
+        .icon {
+          background-color: #f85c56;
+        }
+      }
+      &.info {
+        & > img {
+          width: 50%;
+          top: -30px;
+          right: -15px;
+        }
+        .icon {
+          background-color: #4a7def;
+        }
+      }
+      &.default {
+        & > img {
+          width: 50%;
+          top: -18px;
+          right: 0px;
+        }
+        .icon {
+          background-color: #4d566a;
+        }
+      }
+      &.warning {
+        & > img {
+          width: 40%;
+          top: -22px;
+          right: 30px;
+        }
+        .icon {
+          background-color: #ffd633;
+        }
+      }
+    }
+    @include mq(md) {
+      .card {
+        border: 2px solid $color-primary;
+        margin-bottom: 20px;
+        &.danger {
+          border-color: #f85c56;
+        }
+        &.info {
+          border-color: #4a7def;
+        }
+        &.default {
+          border-color: #4d566a;
+        }
+        &.warning {
+          border-color: #ffd633;
+        }
+        & > img {
+          width: 30% !important;
+          top: 0 !important;
+          right: 0 !important;
+        }
+      }
+    }
+  }
+}

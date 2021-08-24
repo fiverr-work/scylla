@@ -1,0 +1,91 @@
+.navbar {
+  background-color: white;
+  .container {
+    & > div {
+      display: flex;
+    }
+  }
+  .navbar-brand {
+    font-family: $font-bold;
+    font-size: 24px;
+    display: inline-flex;
+    align-items: center;
+    img {
+      margin-right: 5px;
+      width: 52px;
+      height: 52px;
+    }
+  }
+  .toggle-navbar {
+    background: none;
+    width: 30px;
+    margin-right: 10px;
+    display: none;
+  }
+  .navbar-nav {
+    .close {
+      width: 25px;
+      height: 25px;
+      position: fixed;
+      top: 5%;
+      right: 10%;
+      opacity: 0;
+      display: none;
+    }
+  }
+  .nav-link {
+    font-family: $font-medium;
+    &:hover {
+      color: rgb(35, 90, 209);
+    }
+  }
+  .actions {
+    .language {
+      margin-right: 5px;
+      width: 37px;
+      border: 1px solid $color-primary;
+      padding: 4px;
+      border-radius: 4px;
+      background: none;
+      &:hover {
+        background-color: $color-primary;
+        transition: background-color 200ms ease;
+        svg path {
+          transition: fill 200ms ease;
+          fill: white;
+        }
+      }
+    }
+  }
+  @include mq(md) {
+    .toggle-navbar {
+      display: inline-block;
+    }
+    .navbar-nav {
+      position: fixed;
+      inset: 0;
+      align-items: center;
+      justify-content: center;
+      left: -100%;
+      right: auto;
+      width: 100%;
+      opacity: 0;
+      background-color: white;
+      z-index: 100;
+      transition: opacity 100ms, left 200ms;
+      .nav-item:not(:last-child) {
+        margin-bottom: 15px;
+      }
+      &.active {
+        transition: opacity 100ms, left 200ms;
+        opacity: 1;
+        left: 0;
+        .close {
+          transition: opacity 300ms;
+          opacity: 1;
+          display: block;
+        }
+      }
+    }
+  }
+}

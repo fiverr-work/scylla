@@ -1,0 +1,30 @@
+#hero {
+  position: relative;
+  top: 120px;
+  .row {
+    align-items: center;
+  }
+  .content {
+    h1 {
+      margin-bottom: 24px;
+      color: $color-primary;
+      span {
+        -webkit-text-fill-color: white; /* Will override color (regardless of order) */
+        -webkit-text-stroke-width: 2px;
+        -webkit-text-stroke-color: inherit;
+      }
+    }
+    p {
+      margin-bottom: 24px;
+    }
+  }
+  img {
+    max-width: 100%;
+  }
+  @include mq(md) {
+    margin-top: 100px;
+    .row {
+      flex-direction: column-reverse;
+    }
+  }
+}

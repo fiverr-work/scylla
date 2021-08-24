@@ -1,0 +1,12 @@
+.btn-primary {
+  background: rgb(95, 145, 255);
+  background: linear-gradient(90deg, rgba(95, 145, 255, 1) 0%, rgba(35, 90, 209, 1) 100%);
+  border-color: $color-primary;
+  transition: transform 200ms;
+  padding-left: 18px;
+  padding-right: 18px;
+  &:hover {
+    transition: transform 200ms;
+    transform: scale(1.03);
+  }
+}

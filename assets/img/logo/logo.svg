@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="52" height="52" viewBox="0 0 52 52">
+  <defs>
+    <linearGradient id="linear-gradient" x1="0.034" x2="0.96" y2="0.966" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#5f91ff"/>
+      <stop offset="1" stop-color="#235ad1"/>
+    </linearGradient>
+    <clipPath id="clip-path">
+      <path id="Path_18" data-name="Path 18" d="M44.615-35.06l7.012-8.414c-15.162-24.87-40.69-7.2-21.969,4.207C21.21-49.515,41.836-52.549,44.615-35.06Z" transform="translate(-23.061 56.081)" fill="none" clip-rule="evenodd"/>
+    </clipPath>
+    <clipPath id="clip-path-2">
+      <path id="Path_21" data-name="Path 21" d="M7.011-41.459,0-33.045c15.161,24.87,40.69,7.2,21.969-4.207C30.417-27,9.79-23.97,7.011-41.459Z" transform="translate(0 41.459)" fill="none" clip-rule="evenodd"/>
+    </clipPath>
+  </defs>
+  <g id="Logo" transform="translate(5.84 11.68)">
+    <rect id="logo_background" data-name="logo background" width="52" height="52" rx="8" transform="translate(-5.84 -11.68)" fill="url(#linear-gradient)"/>
+    <g id="scylla">
+      <path id="Path_16" data-name="Path 16" d="M44.615-35.06l7.012-8.414c-15.162-24.87-40.69-7.2-21.969,4.207C21.21-49.515,41.836-52.549,44.615-35.06Z" transform="translate(-11.368 56.081)" fill="#fff" fill-rule="evenodd"/>
+      <g id="Group_6" data-name="Group 6" transform="translate(11.692)" clip-path="url(#clip-path)">
+        <path id="Path_17" data-name="Path 17" d="M32.114-35.28c-5.524-4.892-4.744-9.277-.748-11.328a10.767,10.767,0,0,1,8.336-.7c5.059,1.616,8.687,5.795,11.5,11.427l.138,3.947c-5.76,4.3-11.349,3.383-16.827-.935L32.176-35.2" transform="translate(-25.579 52.017)" fill="#f1f1f1" fill-rule="evenodd"/>
+      </g>
+      <path id="Path_19" data-name="Path 19" d="M7.011-41.459,0-33.045c15.161,24.87,40.69,7.2,21.969-4.207C30.417-27,9.79-23.97,7.011-41.459Z" transform="translate(0 48.873)" fill="#fff" fill-rule="evenodd"/>
+      <g id="Group_7" data-name="Group 7" transform="translate(0 7.414)" clip-path="url(#clip-path-2)">
+        <path id="Path_20" data-name="Path 20" d="M24.758-38.992c5.523,4.892,4.744,9.278.747,11.328a10.767,10.767,0,0,1-8.335.7c-5.059-1.616-8.687-5.795-11.5-11.427L5.531-42.34c5.76-4.3,11.349-3.384,16.827.934L24.7-39.068" transform="translate(-2.727 43.275)" fill="#f1f1f1" fill-rule="evenodd"/>
+      </g>
+    </g>
+  </g>
+</svg>

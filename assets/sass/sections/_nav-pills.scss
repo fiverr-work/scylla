@@ -1,0 +1,60 @@
+#nav-pills {
+  padding-top: 5rem;
+  padding-bottom: 5rem;
+  align-items: center;
+  h1 {
+    text-align: center;
+    margin-bottom: 5rem;
+  }
+  .tab-buttons {
+    display: flex;
+    align-items: center;
+    & > div:first-child {
+      max-width: 300px;
+      button {
+        margin: 10px;
+      }
+    }
+    @include mq(lg) {
+      flex-direction: column;
+      & > div:first-child {
+        flex-direction: row !important;
+        max-width: 100% !important;
+        justify-content: center !important;
+      }
+    }
+    .nav-link {
+      padding: 20px 25px;
+      border-radius: 10px;
+      background-color: white;
+      box-shadow: 0 0 10px rgba($color-primary, 0.03);
+
+      &.active {
+        background: rgb(95, 145, 255);
+        background: linear-gradient(90deg, rgba(95, 145, 255, 1) 0%, rgba(35, 90, 209, 1) 100%);
+      }
+    }
+    .tab-pane {
+      display: flex;
+      align-items: center;
+      img {
+        margin-left: 20px;
+        max-width: 300px;
+        width: 35vw;
+      }
+      @include mq(md) {
+        & > div {
+          flex-direction: column-reverse;
+          img {
+            margin: 0;
+            margin-bottom: 20px;
+            width: 50%;
+          }
+        }
+      }
+    }
+  }
+  .tab-content {
+    flex: 1;
+  }
+}

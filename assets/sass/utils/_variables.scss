@@ -1,0 +1,42 @@
+// Colors
+$color-primary: #4a7def;
+$color-text: #4d566a;
+
+$color-danger: #f85c56;
+$color-info: #4a7def;
+$color-default: #848484;
+$color-warning: #ffd633;
+
+// Font Names
+$font: "DINPro";
+
+//==================================//
+// Don't miss with those variabeles //
+//==================================//
+
+// Breakpoint
+$breakpoints: (
+  "xs": 360px,
+  "sm": 576px,
+  "md": 768px,
+  "lg": 992px,
+  "xl": 1200px,
+);
+
+// Black & White
+$color-black: #000000;
+$color-white: #ffffff;
+
+//Font Path
+$font-light-path: "../fonts/" + $font + "/" + $font + "-Light.ttf";
+$font-regular-path: "../fonts/" + $font + "/" + $font + "-Regular.ttf";
+$font-medium-path: "../fonts/" + $font + "/" + $font + "-Medium.ttf";
+$font-bold-path: "../fonts/" + $font + "/" + $font + "-Bold.ttf";
+$font-black-path: "../fonts/" + $font + "/" + $font + "-Black.ttf";
+
+//Font Family
+$font-light: $font + " Light";
+$font-regular: $font + " Regular";
+$font-medium: $font + " Medium";
+$font-bold: $font + " Bold";
+$font-black: $font + " Black";

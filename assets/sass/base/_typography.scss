@@ -1,0 +1,23 @@
+/*=== Import Fonts ===*/
+@include font-face($font-light, $font-light-path);
+@include font-face($font-regular, $font-regular-path);
+@include font-face($font-medium, $font-medium-path);
+@include font-face($font-black, $font-black-path);
+@include font-face($font-bold, $font-bold-path);
+
+/*=== Typography Styling ===*/
+body {
+  color: $color-text;
+  // font-size: $size-small;
+  font-family: $font-regular, sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-stretch: normal;
+  letter-spacing: normal;
+  line-height: 1.5;
+}
+
+h1 {
+  color: $color-primary;
+  font-family: $font-bold;
+}

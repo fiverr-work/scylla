@@ -1,0 +1,56 @@
+#offer {
+  h1 {
+    margin-bottom: 15px;
+  }
+  p {
+    margin-bottom: 15px;
+  }
+  ul li {
+    list-style: initial;
+    &::marker {
+      color: $color-primary;
+    }
+  }
+  .row {
+    border-radius: 10px;
+    align-items: center;
+    background-color: white;
+    padding: 30px 20px;
+    box-shadow: 0 0 10px rgba($color-primary, 0.1);
+  }
+
+  .illustration {
+    background-color: $color-primary;
+    border-radius: 5px;
+    margin-right: 50px;
+    position: relative;
+    img {
+      position: relative;
+      left: 35px;
+    }
+    @include mq(lg) {
+      margin-bottom: 25px;
+    }
+    a {
+      position: absolute;
+      bottom: 30px;
+      right: -30px;
+      &:hover {
+        svg rect {
+          transition: fill 200ms;
+          fill: $color-primary;
+        }
+      }
+      svg {
+        transition: fill 200ms;
+        width: 60px;
+        height: 60px;
+      }
+    }
+  }
+  @include mq(lg) {
+    padding-bottom: 30px;
+  }
+  .content {
+  }
+}
