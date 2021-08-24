@@ -4,4 +4,7 @@ footer {
   color: white;
   padding-bottom: 24px;
   padding-top: 9rem;
+  @include mq(md) {
+    padding-top: 3rem;
+  }
 }

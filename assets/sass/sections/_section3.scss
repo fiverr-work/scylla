@@ -5,6 +5,9 @@
   padding-bottom: 3rem;
   position: relative;
   color: white;
+  @include mq(md) {
+    padding-top: 50px;
+  }
   & > img {
     position: absolute;
     left: -12vw;
@@ -29,8 +32,10 @@
       }
       @include mq(md) {
         flex-direction: column;
+        padding-left: 0;
         img {
           margin-bottom: 30px;
+          margin-right: 0;
         }
       }
     }

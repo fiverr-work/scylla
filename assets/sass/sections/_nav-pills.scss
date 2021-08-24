@@ -35,15 +35,15 @@
       }
     }
     .tab-pane {
-      display: flex;
-      align-items: center;
-      img {
-        margin-left: 20px;
-        max-width: 300px;
-        width: 35vw;
-      }
-      @include mq(md) {
-        & > div {
+      .content {
+        display: flex;
+        align-items: center;
+        img {
+          margin-left: 20px;
+          max-width: 300px;
+          width: 35vw;
+        }
+        @include mq(md) {
           flex-direction: column-reverse;
           img {
             margin: 0;
@@ -56,5 +56,9 @@
   }
   .tab-content {
     flex: 1;
+  }
+  @include mq(md) {
+    padding-bottom: 40px;
+    padding-top: 40px;
   }
 }
